@@ -1,0 +1,94 @@
+target_role:
+  - "Junior Data Analyst"
+  - "Data Analyst"
+  - "Business Data Analyst"
+  - "BI Analyst / Business Intelligence Analyst"
+  - "Reporting Analyst"
+  - "Product Data Analyst"
+  - "MIS Analyst"
+  - "BI Developer"
+
+target_city:
+  - "Dubai"
+  - "Abu Dhabi"
+  - "Sharjah"
+  - "Ajman"
+  - "Ras Al Khaimah"
+
+keywords:
+  - "Junior Data Analyst"
+  - "Data Analyst"
+  - "Business Data Analyst"
+  - "BI Analyst"
+  - "Reporting Analyst"
+  - "Product Data Analyst"
+  - "MIS Analyst"
+  - "BI Developer"
+  - "SQL"
+  - "Python"
+  - "Tableau"
+
+my_skills:
+  - "Python"
+  - "SQL"
+  - "Pandas"
+  - "Tableau"
+  - "Claude"
+  - "Matplotlib"
+  - "Seaborn"
+  - "NumPy"
+  - "Colab"
+  - "Jupyter Notebook"
+  - "Google Sheets"
+  - "Power BI"
+
+experience_years: "0 to 3"
+db_path: "edgedash.db"
+min_fit_score: 60
+sources:
+  - "arbeitnow"
+  # - "apify"  # Needs APIFY_TOKEN in .env
+use_mock_fetcher: false
+llm_provider: "gemini"
+llm_model: "gemini-3.6-flash"
+
+# Scorer Configuration
+score_batch_size: 50
+weight_skill_match: 0.45
+weight_seniority_fit: 0.25
+weight_location_fit: 0.15
+weight_recency: 0.15
+
+# Skill Alias Map — This is MINE to edit; adding entries is expected as I see my own data.
+skill_aliases:
+  k8s: "kubernetes"
+  js: "javascript"
+  node: "node.js"
+  nodejs: "node.js"
+  node.js: "node.js"
+  postgres: "postgres"
+  postgresql: "postgres"
+  psql: "postgres"
+  gcp: "gcp"
+  google cloud: "gcp"
+  google cloud platform: "gcp"
+  ml: "machine learning"
+  ci/cd: "ci/cd"
+  ci cd: "ci/cd"
+  cicd: "ci/cd"
+
+# Verification Thresholds (Rule 39)
+min_score_spread: 10          # Catches score inflation failure mode where all scores are artificially tight
+min_score_stdev: 5.0          # Catches score clustering failure mode where scores lack healthy variance
+max_empty_extraction_pct: 20  # Catches broken extractor failure mode returning empty skill sets
+max_skills_per_listing: 25    # Catches extractor failure mode returning full sentences as skills
+min_gap_sample: 3             # Catches ranking a rumour failure mode from low-sample skill gaps
+max_data_age_days: 3          # Catches stale data ingestion cycle failure mode
+daily_ask_cap: 200            # Global daily cap on ask query endpoint (Rule 3)
+
+
+
+
+
+
+
